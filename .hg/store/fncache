@@ -1,0 +1,124 @@
+data/WhistlingPalms/UserControls/uscTransferStock.Designer.cs.i
+data/WhistlingPalms/Forms/WareHouseList.Designer.cs.i
+data/WhistlingPalms/Forms/ViewTransactionType.resx.i
+data/WhistlingPalms/TransactionDataSet.xss.i
+data/WhistlingPalms/UnUsed Items/TransferStock.Designer.cs.i
+data/WhistlingPalms/InventoryStoreDataSet.xsc.i
+data/WhistlingPalms/ReportFiles/FinancialStatistics.rdlc.i
+data/WhistlingPalms/Forms/AddEditTransactionType.designer.cs.i
+data/WhistlingPalms/Forms/AddNewTransaction.resx.i
+data/WhistlingPalms/Forms/Reports/CurrentInventory.Designer.cs.i
+data/WhistlingPalms/App.config.i
+data/WhistlingPalms/Forms/WareHouseList.cs.i
+data/WhistlingPalms/Program.cs.i
+data/WhistlingPalms/App_Code/Common.cs.i
+data/WhistlingPalms/Forms/Reports/ClientTransactionSummary.Designer.cs.i
+data/WhistlingPalms/Forms/ViewTransactionType.cs.i
+data/WhistlingPalms/Properties/Settings.settings.i
+data/WhistlingPalms/Forms/ViewTransactions.resx.i
+data/WhistlingPalms/Scripts/InstallDatabaseSchema.sql.i
+data/WhistlingPalms/Forms/ViewStockChangeInformation.Designer.cs.i
+data/WhistlingPalms/Forms/AddNewProduct.Designer.cs.i
+data/WhistlingPalms/Forms/AddNewProduct.cs.i
+data/WhistlingPalms/TransactionDataSet.xsc.i
+data/WhistlingPalms/Forms/Reports/StockChangeInformation.resx.i
+data/WhistlingPalms/Forms/AddNewWareHouse.Designer.cs.i
+data/WhistlingPalms/Forms/AddNewWareHouse.resx.i
+data/WhistlingPalms/Forms/Reports/ClientTransactionDetails.Designer.cs.i
+data/WhistlingPalms/Properties/Settings.Designer.cs.i
+data/WhistlingPalms/Forms/CustomerList.resx.i
+data/WhistlingPalms/Forms/ViewStockChangeInformation.cs.i
+data/WhistlingPalms/Forms/CustomerList.Designer.cs.i
+data/WhistlingPalms/UserControls/uscRemoveStock.cs.i
+data/WhistlingPalms/InventoryStore_log.ldf.i
+data/WhistlingPalms/UserControls/uscRemoveStock.Designer.cs.i
+data/WhistlingPalms/Forms/ViewTransferredStockChangeInformation.cs.i
+data/WhistlingPalms/ReportFiles/ClientTransactionSummary.rdlc.i
+data/WhistlingPalms/SimpleInventory.csproj.i
+data/WhistlingPalms/ReportsDataSet.xsd.i
+data/WhistlingPalms/Forms/Reports/FinancialStatistics.cs.i
+data/WhistlingPalms/Forms/AddEditTransactionType.cs.i
+data/WhistlingPalms/Forms/AddNewTransaction.Designer.cs.i
+data/WhistlingPalms/Forms/VendorList.Designer.cs.i
+data/WhistlingPalms/App_Code/clsDatabaseConfig.cs.i
+data/WhistlingPalms/Forms/ViewTransferredStockChangeInformation.Designer.cs.i
+data/WhistlingPalms/Forms/Reports/StockChangeInformation.Designer.cs.i
+data/WhistlingPalms/UnUsed Items/frmMainForm.cs.i
+data/WhistlingPalms/Images/processing.gif.i
+data/WhistlingPalms/Properties/Resources.resx.i
+data/WhistlingPalms/Forms/ViewInventory.Designer.cs.i
+data/WhistlingPalms/UserControls/uscRemoveStock.resx.i
+data/WhistlingPalms/Forms/frmHomePage.resx.i
+data/WhistlingPalms/Forms/ViewStockChangeInformation.resx.i
+data/WhistlingPalms/Forms/Reports/CurrentInventory.cs.i
+data/WhistlingPalms/UserControls/uscAddStock.cs.i
+data/WhistlingPalms/UserControls/uscAddStock.resx.i
+data/WhistlingPalms/UnUsed Items/frmMainForm.Designer.cs.i
+data/WhistlingPalms/Forms/ViewTransactionType.Designer.cs.i
+data/WhistlingPalms/Forms/AddNewClient.Designer.cs.i
+data/WhistlingPalms/UnUsed Items/TransactionType.cs.i
+data/WhistlingPalms/Forms/ViewInventory.resx.i
+data/WhistlingPalms.suo.i
+data/WhistlingPalms/UnUsed Items/AddStock.resx.i
+data/WhistlingPalms/Forms/WareHouseList.resx.i
+data/WhistlingPalms/ReportsDataSet.xsc.i
+data/WhistlingPalms/Forms/ViewTransferredStockChangeInformation.resx.i
+data/WhistlingPalms/Forms/ProductList.Designer.cs.i
+data/WhistlingPalms/Forms/VendorList.resx.i
+data/WhistlingPalms/UnUsed Items/AddStock.Designer.cs.i
+data/WhistlingPalms/Forms/AddNewWareHouse.cs.i
+data/WhistlingPalms/Forms/ViewTransactions.cs.i
+data/WhistlingPalms/Forms/AddEditTransactionType.resx.i
+data/WhistlingPalms/UnUsed Items/frmMainForm.resx.i
+data/WhistlingPalms/UnUsed Items/RemoveStock.Designer.cs.i
+data/WhistlingPalms/Forms/frmHomePage.Designer.cs.i
+data/WhistlingPalms/UnUsed Items/RemoveStock.resx.i
+data/WhistlingPalms/SimpleInventory.csproj.user.i
+data/WhistlingPalms/UnUsed Items/Transaction.cs.i
+data/WhistlingPalms/ReportsDataSet.xss.i
+data/WhistlingPalms/UnUsed Items/RemoveStock.cs.i
+data/WhistlingPalms/Forms/ProductList.cs.i
+data/WhistlingPalms/UnUsed Items/AddStock.cs.i
+data/WhistlingPalms/UserControls/uscTransferStock.resx.i
+data/WhistlingPalms/Forms/frmHomePage.cs.i
+data/WhistlingPalms/Forms/ViewInventory.cs.i
+data/WhistlingPalms.sln.i
+data/WhistlingPalms/InventoryStoreDataSet.xss.i
+data/WhistlingPalms/Forms/Reports/FinancialStatistics.resx.i
+data/WhistlingPalms/UserControls/uscAddStock.Designer.cs.i
+data/WhistlingPalms/Forms/AddNewTransaction.cs.i
+data/WhistlingPalms/UserControls/uscTransferStock.cs.i
+data/WhistlingPalms/Forms/AddNewClient.cs.i
+data/WhistlingPalms/Forms/Reports/ClientTransactionDetails.cs.i
+data/WhistlingPalms/Properties/AssemblyInfo.cs.i
+data/WhistlingPalms/TransactionDataSet.Designer.cs.i
+data/WhistlingPalms/Forms/frmDBSettings.resx.i
+data/WhistlingPalms/InventoryStore.mdf.d
+data/WhistlingPalms/Forms/frmDBSettings.cs.i
+data/WhistlingPalms/InventoryStore.mdf.i
+data/WhistlingPalms/Forms/AddNewProduct.resx.i
+data/WhistlingPalms/UnUsed Items/TransferStock.cs.i
+data/WhistlingPalms/ReportFiles/StockChangeInformation.rdlc.i
+data/WhistlingPalms/Forms/AddNewClient.resx.i
+data/WhistlingPalms/Forms/Reports/ClientTransactionSummary.resx.i
+data/WhistlingPalms/InventoryStoreDataSet.Designer.cs.i
+data/WhistlingPalms/ReportsDataSet.Designer.cs.i
+data/WhistlingPalms/Properties/Resources.Designer.cs.i
+data/WhistlingPalms/ReportFiles/ClientTransactionDetails.rdlc.i
+data/WhistlingPalms/Images/stock_icon.ico.i
+data/WhistlingPalms/Forms/ViewTransactions.Designer.cs.i
+data/WhistlingPalms/Forms/VendorList.cs.i
+data/WhistlingPalms/UnUsed Items/TransactionDetails.cs.i
+data/WhistlingPalms/InventoryStoreDataSet.xsd.i
+data/WhistlingPalms/Forms/CustomerList.cs.i
+data/WhistlingPalms/Forms/Reports/FinancialStatistics.Designer.cs.i
+data/WhistlingPalms/Forms/frmDBSettings.Designer.cs.i
+data/WhistlingPalms/UnUsed Items/TransferStock.resx.i
+data/WhistlingPalms/TransactionDataSet.xsd.i
+data/WhistlingPalms/Forms/Reports/StockChangeInformation.cs.i
+data/WhistlingPalms/Forms/ProductList.resx.i
+data/WhistlingPalms/ReportFiles/CurrentInventory.rdlc.i
+data/WhistlingPalms/Forms/Reports/ClientTransactionDetails.resx.i
+data/WhistlingPalms/TransactionDataSet.cs.i
+data/WhistlingPalms/Forms/Reports/ClientTransactionSummary.cs.i
+data/WhistlingPalms/Forms/Reports/CurrentInventory.resx.i
