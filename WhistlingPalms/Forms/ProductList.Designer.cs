@@ -35,14 +35,8 @@
             this.tblProductsTableAdapter = new WhistlingPalms.InventoryStoreDataSetTableAdapters.tblProductsTableAdapter();
             this.tableAdapterManager = new WhistlingPalms.InventoryStoreDataSetTableAdapters.TableAdapterManager();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnImportStock = new System.Windows.Forms.Button();
             this.tblProductsDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EditColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpDescription = new System.Windows.Forms.TabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -53,8 +47,14 @@
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKInventoryDetailstblProductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventoryDetailsTableAdapter = new WhistlingPalms.InventoryStoreDataSetTableAdapters.InventoryDetailsTableAdapter();
-            this.btnImportStock = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EditColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryStoreDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblProductsBindingSource)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -66,7 +66,6 @@
             this.tpInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKInventoryDetailstblProductsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // inventoryStoreDataSet
@@ -105,8 +104,6 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.dataGridView2);
-            this.splitContainer1.Panel1.Controls.Add(this.btnImportStock);
             this.splitContainer1.Panel1.Controls.Add(this.tblProductsDataGridView);
             this.splitContainer1.Panel1MinSize = 200;
             // 
@@ -116,6 +113,16 @@
             this.splitContainer1.Size = new System.Drawing.Size(909, 499);
             this.splitContainer1.SplitterDistance = 210;
             this.splitContainer1.TabIndex = 2;
+            // 
+            // btnImportStock
+            // 
+            this.btnImportStock.Location = new System.Drawing.Point(8, 21);
+            this.btnImportStock.Name = "btnImportStock";
+            this.btnImportStock.Size = new System.Drawing.Size(75, 23);
+            this.btnImportStock.TabIndex = 1;
+            this.btnImportStock.Text = "Import Stock";
+            this.btnImportStock.UseVisualStyleBackColor = true;
+            this.btnImportStock.Click += new System.EventHandler(this.btnImportStock_Click);
             // 
             // tblProductsDataGridView
             // 
@@ -127,6 +134,7 @@
             this.tblProductsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn4,
+            this.Description,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
@@ -143,63 +151,10 @@
             this.tblProductsDataGridView.TabIndex = 0;
             this.tblProductsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblProductsDataGridView_CellContentClick);
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ProductID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ProductName";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Product Name";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Manufacturer";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Manufacturer";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProductTag1";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Tag1";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "ProductTag2";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Tag2";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "SalePrice";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Sale Price";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // EditColumn
-            // 
-            this.EditColumn.HeaderText = "Edit/Modify";
-            this.EditColumn.Name = "EditColumn";
-            this.EditColumn.ReadOnly = true;
-            this.EditColumn.Text = "Edit";
-            this.EditColumn.ToolTipText = "Modify Product";
-            this.EditColumn.UseColumnTextForButtonValue = true;
-            // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tpDescription);
             this.tabControl1.Controls.Add(this.tpInventory);
+            this.tabControl1.Controls.Add(this.tpDescription);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -210,6 +165,7 @@
             // 
             // tpDescription
             // 
+            this.tpDescription.Controls.Add(this.btnImportStock);
             this.tpDescription.Controls.Add(this.textBox1);
             this.tpDescription.Location = new System.Drawing.Point(4, 22);
             this.tpDescription.Name = "tpDescription";
@@ -292,23 +248,66 @@
             // 
             this.inventoryDetailsTableAdapter.ClearBeforeFill = true;
             // 
-            // btnImportStock
+            // dataGridViewTextBoxColumn1
             // 
-            this.btnImportStock.Location = new System.Drawing.Point(4, 184);
-            this.btnImportStock.Name = "btnImportStock";
-            this.btnImportStock.Size = new System.Drawing.Size(75, 23);
-            this.btnImportStock.TabIndex = 1;
-            this.btnImportStock.Text = "Import Stock";
-            this.btnImportStock.UseVisualStyleBackColor = true;
-            this.btnImportStock.Click += new System.EventHandler(this.btnImportStock_Click);
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ProductID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ProductID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
             // 
-            // dataGridView2
+            // dataGridViewTextBoxColumn4
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(436, 39);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView2.TabIndex = 2;
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ProductName";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Product Name";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // Description
+            // 
+            this.Description.DataPropertyName = "Description";
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
+            this.Description.Width = 306;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Manufacturer";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Manufacturer";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProductTag1";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Tag1";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "ProductTag2";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Tag2";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "SalePrice";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Sale Price";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // EditColumn
+            // 
+            this.EditColumn.HeaderText = "Edit/Modify";
+            this.EditColumn.Name = "EditColumn";
+            this.EditColumn.ReadOnly = true;
+            this.EditColumn.Text = "Edit";
+            this.EditColumn.ToolTipText = "Modify Product";
+            this.EditColumn.UseColumnTextForButtonValue = true;
             // 
             // ProductList
             // 
@@ -332,7 +331,6 @@
             this.tpInventory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKInventoryDetailstblProductsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,19 +348,19 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabPage tpDescription;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewButtonColumn EditColumn;
         private System.Windows.Forms.BindingSource fKInventoryDetailstblProductsBindingSource;
         private InventoryStoreDataSetTableAdapters.InventoryDetailsTableAdapter inventoryDetailsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn wareHouseNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn costDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnImportStock;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewButtonColumn EditColumn;
     }
 }
